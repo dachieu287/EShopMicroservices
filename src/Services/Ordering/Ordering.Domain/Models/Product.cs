@@ -4,7 +4,7 @@ public class Product : Entity<ProductId>
 {
     public string Name { get; set; } = default!;
 
-    public decimal Prrice { get; set; } = default!;
+    public decimal Price { get; set; } = default!;
 
     public static Product Create(ProductId id, string name, decimal price)
     {
@@ -15,7 +15,7 @@ public class Product : Entity<ProductId>
         {
             Id = id,
             Name = name,
-            Prrice = price,
+            Price = price,
         };
 
         return product;
