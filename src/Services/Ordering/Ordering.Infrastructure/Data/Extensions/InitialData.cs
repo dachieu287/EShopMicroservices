@@ -43,6 +43,8 @@ internal class InitialData
                 shippingAddress: address2,
                 billingAddress: address2,
                 payment2);
+            order2.Add(ProductId.Of(new Guid("20672676-F03A-471B-9DDC-56EC9DB92158")), 1, 650);
+            order2.Add(ProductId.Of(new Guid("7751F210-515C-41A9-8C48-EE5B89EA9026")), 1, 450);
 
             return [order1, order2];
         }
